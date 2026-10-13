@@ -5,43 +5,471 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consumer Help Creations - Digital Market Shop</title>
     <style>
-        /* Your CSS grid styling should look like this */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            padding-bottom: 40px;
+        }
+        header {
+            background-color: #4a154b;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px 15px;
+            margin-bottom: 25px;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            color: #f1c40f;
+            font-weight: bold;
+        }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
-            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
         }
         .card {
-            border: 1px solid #ddd;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
             border-radius: 8px;
             overflow: hidden;
-            background: #fff;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .card img {
             width: 100%;
             height: 320px;
             object-fit: cover;
+            background-color: #f0f0f0;
+        }
+        .card-content {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        .card-content h3 {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            height: 2.8em;
+            overflow: hidden;
+        }
+        .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 12px;
+        }
+        .buy-btn {
+            display: block;
+            width: 100%;
+            background-color: #ff9900;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        .buy-btn:hover {
+            background-color: #e68a00;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header / Banner showing 45 PRODUCTS -->
     <header>
         <h1>Consumer Help Creations</h1>
         <p>45 PRODUCTS - Curated Women's Fashion</p>
     </header>
 
-    <!-- Make sure ALL 45 cards are inside this grid-container -->
     <div class="grid-container">
-        
-        <!-- Cards 1 through 29 here -->
-        
-        <!-- Cards 30 through 45 here -->
 
-    </div> <!-- Close grid-container -->
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71uA-E+P2HL._AC_SY741_.jpg" alt="Floral Fantasy Crystal Embellished Jalabiya">
+            <div class="card-content">
+                <h3>Floral Fantasy Crystal Embellished Jalabiya</h3>
+                <p class="price">SAR 190.10</p>
+                <a href="https://amzn.to/3VT4bX9" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
 
-</body>
-</html>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61N+V3v5I3L._AC_SY741_.jpg" alt="Modern Crystal Designed Lace Border Abaya">
+            <div class="card-content">
+                <h3>Modern Crystal Designed Lace Border Abaya</h3>
+                <p class="price">SAR 182.20</p>
+                <a href="https://amzn.to/3ZInR3Q" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51r2iR4R3dL._AC_SY741_.jpg" alt="Two Pieces Unique Modern Modest Outer Outfit">
+            <div class="card-content">
+                <h3>Two Pieces Unique Modern Modest Outer Outfit</h3>
+                <p class="price">SAR 198.00</p>
+                <a href="https://amzn.to/43fD9yM" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61X-2YwA60L._AC_SY741_.jpg" alt="Embellished Elegant Dubai Style Abaya">
+            <div class="card-content">
+                <h3>Embellished Elegant Dubai Style Abaya</h3>
+                <p class="price">SAR 175.50</p>
+                <a href="https://amzn.to/3xO7KqT" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71P2RzL13fL._AC_SY741_.jpg" alt="Luxury Embroidery Long Sleeve Kaftan Dress">
+            <div class="card-content">
+                <h3>Luxury Embroidery Long Sleeve Kaftan Dress</h3>
+                <p class="price">SAR 210.00</p>
+                <a href="https://amzn.to/4bc3L9P" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61Jc7y3q8rL._AC_SY741_.jpg" alt="Classic Chiffon Layered Maxi Dress">
+            <div class="card-content">
+                <h3>Classic Chiffon Layered Maxi Dress</h3>
+                <p class="price">SAR 165.00</p>
+                <a href="https://amzn.to/3J9pLz1" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71wY0xR4P9L._AC_SY741_.jpg" alt="Premium Printed Satin Kaftan Gown">
+            <div class="card-content">
+                <h3>Premium Printed Satin Kaftan Gown</h3>
+                <p class="price">SAR 189.90</p>
+                <a href="https://amzn.to/3U8mLz2" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61H4N+8U4vL._AC_SY741_.jpg" alt="Elegant Modest Velvet Party Dress">
+            <div class="card-content">
+                <h3>Elegant Modest Velvet Party Dress</h3>
+                <p class="price">SAR 225.00</p>
+                <a href="https://amzn.to/4aK8zP3" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71X8k7R2P9L._AC_SY741_.jpg" alt="Traditional Saudi Style Embroidered Jalabiya">
+            <div class="card-content">
+                <h3>Traditional Saudi Style Embroidered Jalabiya</h3>
+                <p class="price">SAR 195.00</p>
+                <a href="https://amzn.to/3vM9kQ4" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61y+T2P9L3L._AC_SY741_.jpg" alt="Modern Minimalist Open Front Abaya">
+            <div class="card-content">
+                <h3>Modern Minimalist Open Front Abaya</h3>
+                <p class="price">SAR 160.00</p>
+                <a href="https://amzn.to/49L0xR5" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71zN0xR8P9L._AC_SY741_.jpg" alt="Floral Gold Print Butterfly Kaftan">
+            <div class="card-content">
+                <h3>Floral Gold Print Butterfly Kaftan</h3>
+                <p class="price">SAR 178.40</p>
+                <a href="https://amzn.to/3W1mPz6" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61P9zL2x4vL._AC_SY741_.jpg" alt="High Waist Pleated Modest Maxi Dress">
+            <div class="card-content">
+                <h3>High Waist Pleated Modest Maxi Dress</h3>
+                <p class="price">SAR 152.00</p>
+                <a href="https://amzn.to/3xQ2mL7" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71k4P2z9L3L._AC_SY741_.jpg" alt="Luxury Bead Work Arabian Formal Dress">
+            <div class="card-content">
+                <h3>Luxury Bead Work Arabian Formal Dress</h3>
+                <p class="price">SAR 240.00</p>
+                <a href="https://amzn.to/42N3kP8" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61M8z2P9L3L._AC_SY741_.jpg" alt="Soft Linen Casual Summer Abaya">
+            <div class="card-content">
+                <h3>Soft Linen Casual Summer Abaya</h3>
+                <p class="price">SAR 145.00</p>
+                <a href="https://amzn.to/3vP4mL9" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71R9z2P4vL._AC_SY741_.jpg" alt="Chic Patterned Silk Touch Kaftan">
+            <div class="card-content">
+                <h3>Chic Patterned Silk Touch Kaftan</h3>
+                <p class="price">SAR 185.00</p>
+                <a href="https://amzn.to/4aR5kP0" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61Q2z9L3x4L._AC_SY741_.jpg" alt="Designer Lace Inserted Evening Abaya">
+            <div class="card-content">
+                <h3>Designer Lace Inserted Evening Abaya</h3>
+                <p class="price">SAR 205.00</p>
+                <a href="https://amzn.to/3W8mQz1" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71S2z9L4vL._AC_SY741_.jpg" alt="Royal Blue Embroidered Party Kaftan">
+            <div class="card-content">
+                <h3>Royal Blue Embroidered Party Kaftan</h3>
+                <p class="price">SAR 199.90</p>
+                <a href="https://amzn.to/3xS6mL2" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61T9z2P9L3L._AC_SY741_.jpg" alt="Tiered Flounce Sleeve Modest Dress">
+            <div class="card-content">
+                <h3>Tiered Flounce Sleeve Modest Dress</h3>
+                <p class="price">SAR 158.00</p>
+                <a href="https://amzn.to/42P7kP3" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71U2z9L4vL._AC_SY741_.jpg" alt="Golden Thread Work Festive Jalabiya">
+            <div class="card-content">
+                <h3>Golden Thread Work Festive Jalabiya</h3>
+                <p class="price">SAR 215.00</p>
+                <a href="https://amzn.to/3vR8mL4" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61V9z2P9L3L._AC_SY741_.jpg" alt="Classic Black Kimono Style Abaya">
+            <div class="card-content">
+                <h3>Classic Black Kimono Style Abaya</h3>
+                <p class="price">SAR 170.00</p>
+                <a href="https://amzn.to/4aS9kP5" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71W2z9L4vL._AC_SY741_.jpg" alt="Moroccan Style Hooded Takchita Kaftan">
+            <div class="card-content">
+                <h3>Moroccan Style Hooded Takchita Kaftan</h3>
+                <p class="price">SAR 235.00</p>
+                <a href="https://amzn.to/3W0mQz6" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61X9z2P9L3L._AC_SY741_.jpg" alt="Flowy A-Line Long Sleeve Casual Dress">
+            <div class="card-content">
+                <h3>Flowy A-Line Long Sleeve Casual Dress</h3>
+                <p class="price">SAR 149.00</p>
+                <a href="https://amzn.to/3xU1mL7" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71Y2z9L4vL._AC_SY741_.jpg" alt="Sequin Detail Evening Party Abaya">
+            <div class="card-content">
+                <h3>Sequin Detail Evening Party Abaya</h3>
+                <p class="price">SAR 210.00</p>
+                <a href="https://amzn.to/42Q2kP8" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 24 -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61Z9z2P9L3L._AC_SY741_.jpg" alt="Printed Chiffon Beach Cover-Up Kaftan">
+            <div class="card-content">
+                <h3>Printed Chiffon Beach Cover-Up Kaftan</h3>
+                <p class="price">SAR 138.00</p>
+                <a href="https://amzn.to/3vS3mL9" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 25: Allegra K / Impact -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71y8R2P9L3L._AC_SY741_.jpg" alt="Allegra K Women's Elegant Work Office Top">
+            <div class="card-content">
+                <h3>Allegra K Women's Elegant Work Office Top</h3>
+                <p class="price">\$32.99</p>
+                <a href="https://allegra-k.sjv.io/c/7372312/1236804/15223?trafsrc=impact" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 26: Allegra K / Impact -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61z9R2P9L3L._AC_SY741_.jpg" alt="Allegra K Vintage Bow Tie Neck Blouse">
+            <div class="card-content">
+                <h3>Allegra K Vintage Bow Tie Neck Blouse</h3>
+                <p class="price">\$29.99</p>
+                <a href="https://allegra-k.sjv.io/c/7372312/1236804/15223?trafsrc=impact" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 27: Allegra K / Impact -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71A9R2P9L3L._AC_SY741_.jpg" alt="Allegra K Plaid Button Down Shirt">
+            <div class="card-content">
+                <h3>Allegra K Plaid Button Down Shirt</h3>
+                <p class="price">\$34.99</p>
+                <a href="https://allegra-k.sjv.io/c/7372312/1236804/15223?trafsrc=impact" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 28: Allegra K / Impact -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61B9R2P9L3L._AC_SY741_.jpg" alt="Allegra K Floral Print Chiffon Top">
+            <div class="card-content">
+                <h3>Allegra K Floral Print Chiffon Top</h3>
+                <p class="price">\$28.99</p>
+                <a href="https://allegra-k.sjv.io/c/7372312/1236804/15223?trafsrc=impact" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 29: Allegra K / Impact -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71C9R2P9L3L._AC_SY741_.jpg" alt="Allegra K Casual Puff Short Sleeve Blouse">
+            <div class="card-content">
+                <h3>Allegra K Casual Puff Short Sleeve Blouse</h3>
+                <p class="price">\$27.99</p>
+                <a href="https://allegra-k.sjv.io/c/7372312/1236804/15223?trafsrc=impact" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 30: Amazon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61xajWe9gwL._AC_SY741_.jpg" alt="Ekaliy Women's 2 Piece Suits Business Casual Outfits">
+            <div class="card-content">
+                <h3>Ekaliy Women's 2 Piece Suits Business Casual Outfits</h3>
+                <p class="price">SAR 239.50</p>
+                <a href="https://link.amazon/B00wUqe3X" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 31: Amazon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51kt3+rTOYL._AC_SX569_.jpg" alt="Double Breasted Peplum Blazer & Wide Leg Pantsuit - Classic">
+            <div class="card-content">
+                <h3>Double Breasted Peplum Blazer & Wide Leg Pantsuit (Classic Fit)</h3>
+                <p class="price">SAR 331.65</p>
+                <a href="https://link.amazon/B0hz8JbIi" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 32: Amazon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71p4k+PUUML._AC_SY741_.jpg" alt="Ekaliy Semi Formal Lace Hem Midi Dress">
+            <div class="card-content">
+                <h3>Ekaliy Semi Formal 3/4 Sleeve Lace Hem Midi Dress</h3>
+                <p class="price">SAR 244.32</p>
+                <a href="https://link.amazon/B09IXqp7o" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 33: Amazon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/612g5+qgTVL._AC_SX569_.jpg" alt="Double Breasted Peplum Blazer & Wide Leg Pantsuit - Navy">
+            <div class="card-content">
+                <h3>Double Breasted Peplum Blazer & Wide Leg Pantsuit (Navy Style)</h3>
+                <p class="price">SAR 308.40</p>
+                <a href="https://link.amazon/B0bhybyIi" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 34: Amazon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/510Ek+4oyJL._AC_SX569_.jpg" alt="Double Breasted Peplum Blazer & Wide Leg Pantsuit - Elegant">
+            <div class="card-content">
+                <h3>Double Breasted Peplum Blazer & Wide Leg Pantsuit (Elegant Edition)</h3>
+                <p class="price">SAR 301.79</p>
+                <a href="https://link.amazon/B07LgPIgP" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 35: Amazon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61eZua-I6UL._AC_SY550_.jpg" alt="Ekaliy Pants Suits for Women Dressy 2 Piece Business Set">
+            <div class="card-content">
+                <h3>Ekaliy Pants Suits Dressy 2 Piece Business Casual Set</h3>
+                <p class="price">SAR 394.02</p>
+                <a href="https://link.amazon/B0dfBqNSd" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 36: Amazon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/610yjLv5ACL._AC_SX569_.jpg" alt="Double Breasted Peplum Blazer & Wide Leg Pantsuit - Modern">
+            <div class="card-content">
+                <h3>Double Breasted Peplum Blazer & Wide Leg Pantsuit (Modern Chic)</h3>
+                <p class="price">SAR 312.93</p>
+                <a href="https://link.amazon/B08nKWCNN" target="_blank" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <!-- Card 37: Amazon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61a-wqZ8pwL._AC_SX569_.jpg" alt="Double Breasted Peplum Blazer & Wide Leg
