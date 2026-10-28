@@ -136,3 +136,20 @@ h1 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/* Badge Styling */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #6b21a8;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+  z-index: 2;
+}
