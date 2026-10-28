@@ -84,3 +84,9 @@ h1 {
 .buy-btn:hover {
   background-color: #e68a00;
 }
+.product-card img {
+  width: 100%;
+  height: 350px; /* Sets a fixed height for all product images */
+  object-fit: cover; /* Keeps image proportions neat without stretching */
+  border-radius: 8px;
+}
