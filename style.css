@@ -71,18 +71,10 @@ h1 {
 }
 
 /* Product Image Sizing (Prevents Cropping & Ensures Uniform Height) */
+/* Product Image Sizing (Prevents Cropping & Ensures Uniform Height) */
 .card img, .product-card img {
-  .card img, .product-card img {
   width: 100% !important;
-  max-width: 100% !important;
   height: 220px !important;
-  object-fit: contain !important;
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #ffffff;
-}
-  height: 260px !important;
   object-fit: contain !important;
   border-radius: 8px;
   margin-top: 10px;
