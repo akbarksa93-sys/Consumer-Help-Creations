@@ -52,27 +52,24 @@ h1 {
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* Badge Styling */
-.badge {
-  .card-number {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #6b21a8;
-    color: #ffffff;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 13px;
-    z-index: 2;
+/* Badge Styling (Supports both .badge and .card-number) */
+.badge, .card-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #6b21a8;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+  z-index: 2;
 }
 
-
-/* Product Image Sizing (Prevents Cropping & Ensures Uniform Height) */
 /* Product Image Sizing (Prevents Cropping & Ensures Uniform Height) */
 .card img, .product-card img {
   width: 100% !important;
@@ -107,7 +104,7 @@ h1 {
 }
 
 /* Buy / View Button */
-.buy-btn {
+.buy-btn, .shop-now-btn {
   background-color: #ff9900;
   color: #000000;
   text-decoration: none;
@@ -122,7 +119,7 @@ h1 {
   font-size: 13px;
 }
 
-.buy-btn:hover {
+.buy-btn:hover, .shop-now-btn:hover {
   background-color: #e68a00;
 }
 
@@ -137,21 +134,4 @@ h1 {
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-/* Badge Styling */
-.badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #6b21a8;
-  color: #ffffff;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 13px;
-  z-index: 2;
 }
