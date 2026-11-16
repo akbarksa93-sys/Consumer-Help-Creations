@@ -45,6 +45,69 @@
         <p>We gathered many brands Collections for viewers choices large Size Medium & small sizes this store offers collections with Original Prices discounts and deliver our Shop Link is consumerhelp-21 | 45 REAL IMAGES FULL - NO EMPTY - 72-Year Young Learner RIYADH - Women Fashion ONLY - BEST Since 2009 - Store Doors 100% OPEN Alhamdulillah</p>
     </div>
 
+<!-- Search & Filter Bar -->
+<div style="max-width: 1100px; margin: 20px auto; padding: 15px; text-align: center; font-family: Arial, sans-serif;">
+  <input 
+    type="text" 
+    id="storeSearch" 
+    onkeyup="filterStore()" 
+    placeholder="Search dresses, abayas, maxi, satin, party..." 
+    style="width: 100%; max-width: 500px; padding: 12px 16px; font-size: 16px; border: 2px solid #7b2cbf; border-radius: 8px; outline: none; margin-bottom: 14px; box-sizing: border-box;"
+  >
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
+    <button onclick="setPlatform('all', this)" class="filter-btn" style="background-color: #f39c12; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer;">All Designs</button>
+    <button onclick="setPlatform('berylove', this)" class="filter-btn" style="background-color: #7b2cbf; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer;">BeryLove ($)</button>
+    <button onclick="setPlatform('joom', this)" class="filter-btn" style="background-color: #7b2cbf; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer;">Joom (€)</button>
+    <button onclick="setPlatform('amazon', this)" class="filter-btn" style="background-color: #7b2cbf; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer;">Amazon</button>
+    <button onclick="setPlatform('temu', this)" class="filter-btn" style="background-color: #7b2cbf; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer;">Temu</button>
+  </div>
+  <p id="resultCount" style="margin-top: 10px; font-size: 14px; color: #555555;"></p>
+</div>
+
+<script>
+  let activePlatform = 'all';
+
+  function setPlatform(platform, btn) {
+    activePlatform = platform;
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(b => b.style.backgroundColor = '#7b2cbf');
+    btn.style.backgroundColor = '#f39c12';
+    filterStore();
+  }
+
+  function filterStore() {
+    const query = document.getElementById('storeSearch').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.product-card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const badge = card.querySelector('.platform-badge');
+      const title = card.querySelector('h3');
+      const price = card.querySelector('p');
+
+      const platformText = badge ? badge.textContent.toLowerCase().trim() : '';
+      const fullText = ((title ? title.textContent : '') + ' ' + (price ? price.textContent : '')).toLowerCase();
+
+      const matchesPlatform = (activePlatform === 'all') || platformText.includes(activePlatform);
+      const matchesSearch = (query === '') || fullText.includes(query);
+
+      if (matchesPlatform && matchesSearch) {
+        card.style.display = '';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const countEl = document.getElementById('resultCount');
+    if (query !== '' || activePlatform !== 'all') {
+      countEl.textContent = 'Showing ' + visible + ' matching designs';
+    } else {
+      countEl.textContent = '';
+    }
+  }
+</script>
+
     <div class="container">
       <!-- Card 1 (Amazon) -->
       <div class="card">
