@@ -158,3 +158,47 @@ h1 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 2;
 }
+
+/* Final Override: Wide Orange CTA Buttons Across All Card Formats */
+.card a,
+.card .buy-btn,
+.card .shop-btn,
+.card .shop-now-btn,
+.product-card a,
+.product-card .buy-btn,
+.product-card .shop-btn,
+.product-card .shop-now-btn,
+.buy-btn,
+.shop-btn,
+.shop-now-btn {
+  display: block !important;
+  width: 85% !important;
+  max-width: 85% !important;
+  margin: 10px auto 4px auto !important;
+  padding: 10px 0 !important;
+  background-color: #f39c12 !important;
+  color: #ffffff !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  text-decoration: none !important;
+  border-radius: 6px !important;
+  border: none !important;
+  text-align: center !important;
+}
+
+.card a:hover,
+.card .buy-btn:hover,
+.card .shop-btn:hover,
+.card .shop-now-btn:hover,
+.product-card a:hover,
+.product-card .buy-btn:hover,
+.product-card .shop-btn:hover,
+.product-card .shop-now-btn:hover,
+.buy-btn:hover,
+.shop-btn:hover,
+.shop-now-btn:hover {
+  background-color: #e67e22 !important;
+  color: #ffffff !important;
+}
